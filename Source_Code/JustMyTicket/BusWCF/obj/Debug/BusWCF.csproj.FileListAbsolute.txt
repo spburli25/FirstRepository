@@ -1,0 +1,8 @@
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\BusWCF\bin\BusWCF.dll
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\BusWCF\bin\BusWCF.pdb
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\BusWCF\obj\Debug\BusWCF.dll
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\BusWCF\obj\Debug\BusWCF.pdb
+C:\Apps\JustMyTicket\BusWCF\bin\BusWCF.dll
+C:\Apps\JustMyTicket\BusWCF\bin\BusWCF.pdb
+C:\Apps\JustMyTicket\BusWCF\obj\Debug\BusWCF.dll
+C:\Apps\JustMyTicket\BusWCF\obj\Debug\BusWCF.pdb

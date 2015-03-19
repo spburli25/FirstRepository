@@ -1,0 +1,71 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="JustMyTicket.UserProfile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="Just My Ticket" FontSize="40">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Search" FontFamily="Calibri" FontSize="1" >
+
+                  <StackPanel x:Name="MapPanel" Grid.Row="1" Margin="12,0,12,0">
+                        <TextBox x:Name="ToAddress" Height="79" Width="436" KeyDown="ToAddress_KeyDown"></TextBox>
+                    <my:Map Name="map1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Center="60.2397,24.8708"
+                    CredentialsProvider="AkByKDc368ChAXImMM_og6Q1jHcirda3kotyp9OAdIeUDb1XmnDxKYR9wq0S-Xoz" ZoomBarVisibility="Visible" ZoomLevel="16" Height="529" />
+                </StackPanel>
+
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="Recharge" FontFamily="Calibri" FontSize="15" >
+                <Grid x:Name="ContentPanel" Margin="12,0,0,0" Height="736" VerticalAlignment="Bottom" Grid.RowSpan="2" Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="236*" />
+                        <ColumnDefinition Width="220*" />
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="Debit Card" Height="72" HorizontalAlignment="Left" Margin="36,238,0,0" Name="radioButton1" VerticalAlignment="Top" Background="#FFE2D7CD" BorderBrush="#FFA53E3E" Foreground="#FF9B1F1F" IsChecked="True" Visibility="Visible" />
+                    <RadioButton Content="Credit Card" Grid.Column="1" Height="72" HorizontalAlignment="Left" Margin="0,238,0,0" Name="radioButton2" VerticalAlignment="Top" Background="#FFE2D7CD" BorderBrush="#FFA53E3E" Foreground="#FF9B1F1F" />
+                    <TextBox Height="75" HorizontalAlignment="Left" Margin="2,316,0,0" Name="txtNameOnCard" Text="Name on the Card" VerticalAlignment="Top" Width="460" Grid.ColumnSpan="2" SelectionForeground="White" BorderBrush="#BFD82828" GotFocus="txtNameOnCard_GotFocus" LostFocus="txtNameOnCard_LostFocus" Background="Cyan" CaretBrush="#FFDEB9B9" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="0,397,0,0" Name="txtCardNo" Text="Card Number" VerticalAlignment="Top" Width="460" Grid.ColumnSpan="2" BorderBrush="#BFD82828" GotFocus="txtCardNo_GotFocus" LostFocus="txtCardNo_LostFocus" Background="Cyan" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="6,475,0,0" Name="txtMonth" Text="Month" VerticalAlignment="Top" Width="159" BorderBrush="#BFD82828" GotFocus="txtMonth_GotFocus" LostFocus="txtMonth_LostFocus" Background="Cyan" />
+                    <TextBox Height="72" HorizontalAlignment="Right" Margin="0,475,120,0" Name="txtYear" Text="Year" VerticalAlignment="Top" Width="159" Grid.ColumnSpan="2" BorderBrush="#BFD82828" GotFocus="txtYear_GotFocus" LostFocus="txtYear_LostFocus" Background="Cyan" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="8,553,0,0" Name="txtCVV" Text="CVV" VerticalAlignment="Top" Width="159" BorderBrush="#BFD82828" GotFocus="txtCVV_GotFocus" LostFocus="txtCVV_LostFocus" Background="Cyan"  />
+                    <Button Content="Pay Now" Height="72" HorizontalAlignment="Left" Margin="114,644,0,0" Name="btnPayNow" VerticalAlignment="Top" Width="207" Foreground="Black" BorderBrush="#FFB73434" Grid.ColumnSpan="2" Click="btnPayNow_Click" />
+                    <TextBlock x:Name="txtBalance" Height="51" HorizontalAlignment="Right" Margin="0,188,55,0"  VerticalAlignment="Top" Grid.ColumnSpan="2" Width="212" Foreground="Black" Text="50" FontSize="22" />
+                    <TextBlock Height="51" FontSize="20" HorizontalAlignment="Left" Margin="37,187,0,0" x:Name="txtMyacc" Text="My Balance" VerticalAlignment="Top" Width="133" Foreground="Black" />
+                    
+                    <TextBox Background="Cyan" BorderBrush="#BFD82828" Height="72" HorizontalAlignment="Left" Margin="10,10,0,0" Name="textBox1" Text="CVV" VerticalAlignment="Top" Width="159" />
+                    
+                    <TextBox Grid.ColumnSpan="2" Height="71" HorizontalAlignment="Left" Margin="175,558,0,0" Name="txtAmount" Text="Amount" VerticalAlignment="Top" Width="137" Background="Cyan" BorderBrush="#BFD82828"  GotFocus="txtAmount_GotFocus" LostFocus="txtAmount_LostFocus"/>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+       
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton x:Name="appbar_button2" IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menuItem1" Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem x:Name="menuItem2" Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    
+</phone:PhoneApplicationPage>

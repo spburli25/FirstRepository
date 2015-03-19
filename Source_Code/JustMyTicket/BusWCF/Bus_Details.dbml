@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Bus_Details" Class="Bus_DetailsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BNGWIP-L-99212\Sqlexpress;Initial Catalog=Bus_Details;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Bus_DetailsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bus_Route" Member="Bus_Routes">
+    <Type Name="Bus_Route">
+      <Column Name="Bus_No" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Distance" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Destination" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Map_Path" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Map_Print" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MONEY_TRANSACTION" Member="MONEY_TRANSACTIONs">
+    <Type Name="MONEY_TRANSACTION">
+      <Column Name="Email_ID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Account_No" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bank_Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CVV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expiry_Date" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.REGISTER" Member="REGISTERs">
+    <Type Name="REGISTER">
+      <Column Name="Email_ID" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone_Number" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bus_Money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.usp_UpdateDetails" Method="usp_UpdateDetails">
+    <Parameter Name="money" Type="System.Int32" DbType="Int" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.usp_UpdateDetailsTransaction" Method="usp_UpdateDetailsTransaction">
+    <Parameter Name="money" Type="System.Int32" DbType="Int" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

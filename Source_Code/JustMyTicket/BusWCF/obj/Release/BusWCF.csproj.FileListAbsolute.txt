@@ -1,0 +1,4 @@
+C:\Apps\JustMyTicket\BusWCF\bin\BusWCF.dll
+C:\Apps\JustMyTicket\BusWCF\bin\BusWCF.pdb
+C:\Apps\JustMyTicket\BusWCF\obj\Release\BusWCF.dll
+C:\Apps\JustMyTicket\BusWCF\obj\Release\BusWCF.pdb

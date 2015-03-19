@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/BusWCF" />
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xs:element name="RetrieveFormatedAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="lat" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="lng" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RetrieveFormatedAddressResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="RetrieveFormatedAddressResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusRoute">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="source" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="destination" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusRouteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BusWCF" minOccurs="0" name="BusRouteResult" nillable="true" type="q1:ArrayOfBus" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusRoute1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="source" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="destination" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BusRoute1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BusRoute1Result" nillable="true" type="q2:ArrayOfstring" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="User_Register">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BusWCF" minOccurs="0" name="newUser" nillable="true" type="q3:REGISTER" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="User_RegisterResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="User_RegisterResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="login">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userEmail" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="loginResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="loginResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Money_Transfer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="em_ID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="amount" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Money_TransferResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Money_TransferResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Current_Balance">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Current_BalanceResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BusWCF" minOccurs="0" name="Current_BalanceResult" nillable="true" type="q4:REGISTER" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="payMoney">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="money" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="payMoneyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="payMoneyResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BusWCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BusWCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfBus">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Bus" nillable="true" type="tns:Bus" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfBus" nillable="true" type="tns:ArrayOfBus" />
+      <xs:complexType name="Bus">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bus_No" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Distance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mappath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Bus" nillable="true" type="tns:Bus" />
+      <xs:complexType name="REGISTER">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bus_Money" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Email_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone_Number" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="REGISTER" nillable="true" type="tns:REGISTER" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfstring">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_RetrieveFormatedAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveFormatedAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RetrieveFormatedAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveFormatedAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BusRoute_InputMessage">
+    <wsdl:part name="parameters" element="tns:BusRoute" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BusRoute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BusRouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BusRoute1_InputMessage">
+    <wsdl:part name="parameters" element="tns:BusRoute1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BusRoute1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BusRoute1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_User_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:User_Register" />
+  </wsdl:message>
+  <wsdl:message name="IService1_User_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:User_RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Money_Transfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Money_Transfer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Money_Transfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Money_TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Current_Balance_InputMessage">
+    <wsdl:part name="parameters" element="tns:Current_Balance" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Current_Balance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Current_BalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_payMoney_InputMessage">
+    <wsdl:part name="parameters" element="tns:payMoney" />
+  </wsdl:message>
+  <wsdl:message name="IService1_payMoney_OutputMessage">
+    <wsdl:part name="parameters" element="tns:payMoneyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="RetrieveFormatedAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RetrieveFormatedAddress" message="tns:IService1_RetrieveFormatedAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RetrieveFormatedAddressResponse" message="tns:IService1_RetrieveFormatedAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BusRoute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BusRoute" message="tns:IService1_BusRoute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BusRouteResponse" message="tns:IService1_BusRoute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BusRoute1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BusRoute1" message="tns:IService1_BusRoute1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BusRoute1Response" message="tns:IService1_BusRoute1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="User_Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/User_Register" message="tns:IService1_User_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/User_RegisterResponse" message="tns:IService1_User_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Money_Transfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Money_Transfer" message="tns:IService1_Money_Transfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Money_TransferResponse" message="tns:IService1_Money_Transfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Current_Balance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Current_Balance" message="tns:IService1_Current_Balance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Current_BalanceResponse" message="tns:IService1_Current_Balance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="payMoney">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/payMoney" message="tns:IService1_payMoney_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/payMoneyResponse" message="tns:IService1_payMoney_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveFormatedAddress">
+      <soap:operation soapAction="http://tempuri.org/IService1/RetrieveFormatedAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusRoute">
+      <soap:operation soapAction="http://tempuri.org/IService1/BusRoute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusRoute1">
+      <soap:operation soapAction="http://tempuri.org/IService1/BusRoute1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="User_Register">
+      <soap:operation soapAction="http://tempuri.org/IService1/User_Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Money_Transfer">
+      <soap:operation soapAction="http://tempuri.org/IService1/Money_Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Current_Balance">
+      <soap:operation soapAction="http://tempuri.org/IService1/Current_Balance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payMoney">
+      <soap:operation soapAction="http://tempuri.org/IService1/payMoney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:51670/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

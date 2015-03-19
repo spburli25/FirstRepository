@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="JustMyTicket.Payment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"></StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,0,0,0" Height="768" VerticalAlignment="Bottom" Grid.RowSpan="2" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="236*" />
+                <ColumnDefinition Width="220*" />
+            </Grid.ColumnDefinitions>
+            <Image Height="104" HorizontalAlignment="Left" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="468" Grid.ColumnSpan="2" Source=".\Images\JustMyTicket.png"/>
+            <RadioButton Content="Debit Card" Height="72" HorizontalAlignment="Left" Margin="36,238,0,0" Name="radioButton1" VerticalAlignment="Top" Background="#FFE2D7CD" BorderBrush="#FFA53E3E" Foreground="#FF9B1F1F" IsChecked="True" Visibility="Visible" />
+            <RadioButton Content="Credit Card" Grid.Column="1" Height="72" HorizontalAlignment="Left" Margin="0,238,0,0" Name="radioButton2" VerticalAlignment="Top" Background="#FFE2D7CD" BorderBrush="#FFA53E3E" Foreground="#FF9B1F1F" />
+            <TextBox Height="75" HorizontalAlignment="Left" Margin="2,316,0,0" Name="txtNameOnCard" Text="Name on the Card" VerticalAlignment="Top" Width="460" Grid.ColumnSpan="2" SelectionForeground="White" BorderBrush="#BFD82828" GotFocus="txtNameOnCard_GotFocus" LostFocus="txtNameOnCard_LostFocus" Background="Cyan" CaretBrush="#FFDEB9B9" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,397,0,0" Name="txtCardNo" Text="Card Number" VerticalAlignment="Top" Width="460" Grid.ColumnSpan="2" BorderBrush="#BFD82828" GotFocus="txtCardNo_GotFocus" LostFocus="txtCardNo_LostFocus" Background="Cyan" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="6,475,0,0" Name="txtMonth" Text="Month" VerticalAlignment="Top" Width="159" BorderBrush="#BFD82828" GotFocus="txtMonth_GotFocus" LostFocus="txtMonth_LostFocus" Background="Cyan" />
+            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,475,120,0" Name="txtYear" Text="Year" VerticalAlignment="Top" Width="159" Grid.ColumnSpan="2" BorderBrush="#BFD82828" GotFocus="txtYear_GotFocus" LostFocus="txtYear_LostFocus" Background="Cyan" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="8,553,0,0" Name="txtCVV" Text="CVV" VerticalAlignment="Top" Width="159" BorderBrush="#BFD82828" GotFocus="txtCVV_GotFocus" LostFocus="txtCVV_LostFocus" Background="Cyan"  />
+            <Button Content="Pay Now" Height="72" HorizontalAlignment="Left" Margin="114,644,0,0" Name="button1" VerticalAlignment="Top" Width="207" Foreground="Black" BorderBrush="#FFB73434" Grid.ColumnSpan="2" />
+            <TextBlock x:Name="txtBalance" Height="51" HorizontalAlignment="Right" Margin="0,155,46,0"  VerticalAlignment="Top" Grid.ColumnSpan="2" Width="212" Foreground="Black" />
+            <TextBlock Height="51" HorizontalAlignment="Left" Margin="22,155,0,0" x:Name="txtMyacc" Text="My Balance" VerticalAlignment="Top" Width="182" Foreground="Black" />
+            <TextBox Grid.ColumnSpan="2" Height="72" HorizontalAlignment="Left" Margin="189,553,0,0" Name="textBox3" Text="Amount" VerticalAlignment="Top" Width="159" Background="Cyan" BorderBrush="#BFD82828"/>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

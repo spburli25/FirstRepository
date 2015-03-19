@@ -1,0 +1,14 @@
+﻿<xapCache source="C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\JustMyTicket.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="3/17/2015 11:04:40 PM">
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="3/17/2015 8:51:20 AM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\Background.png" archivePath="Background.png" lastWriteTime="2/28/2015 11:41:08 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="3/15/2015 5:45:54 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\JustMyTicket.dll" archivePath="JustMyTicket.dll" lastWriteTime="3/17/2015 11:04:39 PM" />
+  <file source="c:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/15/2011 3:36:26 PM" />
+  <file source="c:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.Maps.dll" archivePath="Microsoft.Phone.Controls.Maps.dll" lastWriteTime="9/15/2011 3:36:26 PM" />
+  <file source="C:\Apps\JustMyTicket\packages\Newtonsoft.Json.5.0.8\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="3/16/2015 11:24:34 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="3/17/2015 4:33:25 AM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2/28/2015 11:41:09 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/17/2015 9:51:22 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="3/15/2015 5:45:54 PM" />
+  <file source="C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="2/28/2015 11:41:08 PM" />
+</xapCache>

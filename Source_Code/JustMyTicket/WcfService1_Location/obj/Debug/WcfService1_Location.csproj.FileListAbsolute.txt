@@ -1,0 +1,20 @@
+c:\users\sri\documents\visual studio 2010\Projects\Loc_verify\WcfService1_Location\bin\WcfService1_Location.dll
+c:\users\sri\documents\visual studio 2010\Projects\Loc_verify\WcfService1_Location\bin\WcfService1_Location.pdb
+c:\users\sri\documents\visual studio 2010\Projects\Loc_verify\WcfService1_Location\obj\Debug\ResolveAssemblyReference.cache
+c:\users\sri\documents\visual studio 2010\Projects\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.dll
+c:\users\sri\documents\visual studio 2010\Projects\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.pdb
+I:\Loc_verify\WcfService1_Location\bin\WcfService1_Location.dll
+I:\Loc_verify\WcfService1_Location\bin\WcfService1_Location.pdb
+I:\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.dll
+I:\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.pdb
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\bin\WcfService1_Location.dll
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\bin\WcfService1_Location.pdb
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.dll
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.pdb
+C:\Users\Abiswa\Desktop\copy\Loc_verify\WcfService1_Location\bin\System.Runtime.Serialization.Json.dll
+E:\copy\Loc_verify\WcfService1_Location\bin\WcfService1_Location.dll
+E:\copy\Loc_verify\WcfService1_Location\bin\WcfService1_Location.pdb
+E:\copy\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.csprojResolveAssemblyReference.cache
+E:\copy\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.dll
+E:\copy\Loc_verify\WcfService1_Location\obj\Debug\WcfService1_Location.pdb

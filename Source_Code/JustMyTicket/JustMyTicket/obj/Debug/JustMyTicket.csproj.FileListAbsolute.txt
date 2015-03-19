@@ -1,0 +1,35 @@
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\App.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\BusInformation.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\FBLogin.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\MainPage.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\HomePage.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\Payment.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\Registration.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\Ticket.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\UserProfile.g.i.cs
+\\BNGRDC-NA-V501\Iyappan.Nagarajan$\Cached\My Documents\Visual Studio 2010\Projects\JustMyTicket\JustMyTicket\obj\Debug\JustMyTicket.g.resources
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\ApplicationIcon.png
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Background.png
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\JustMyTicket.dll
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\JustMyTicket.pdb
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\AppManifest.xaml
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\JustMyTicket.xap
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Newtonsoft.Json.dll
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Apps\JustMyTicket\JustMyTicket\Bin\Debug\Newtonsoft.Json.xml
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\App.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\BusInformation.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\FBLogin.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\MainPage.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\HomePage.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\Payment.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\Registration.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\Ticket.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\UserProfile.g.i.cs
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\JustMyTicket.g.resources
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\JustMyTicket.dll
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\JustMyTicket.pdb
+C:\Apps\JustMyTicket\JustMyTicket\obj\Debug\XapCacheFile.xml
